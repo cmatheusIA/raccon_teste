@@ -11,4 +11,4 @@ valor pago em pedágios por corrida?*/
 select  avg(tolls_amount) from nw_taxi  where tolls_amount is not 0
 
 /* Q4. Qual a hora que mais começaram corridas?*/
-select max(count(distinct pickup_datatime)) from nw_taxi 
+select max(count( pickup_datatime)) from nw_taxi  group by pickup_datatime
